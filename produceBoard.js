@@ -358,6 +358,7 @@ function createBoardTableVisual() {
         for (let j = 0; j < 9; j++) {
             let cell = document.createElement("td");
             let type = board[i][j];
+            console.log(`Making cell with value (${board[i][j]})`);
             cell.classList.add("cell");
 
             // Set the value of the cell from the board array
