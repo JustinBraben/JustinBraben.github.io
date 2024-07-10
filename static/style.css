@@ -112,6 +112,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+#menu {
+  font-size: 30px;
+  padding: 15px 0;
+}
+
 #content {
   align-self: center;
   box-sizing: border-box;
