@@ -28,9 +28,17 @@ jobs:
 
       - name: Build
         run: zig build --summary all
+
+      - name: List CWD and files
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Contents:"
+          ls
+        shell: bash
           
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
