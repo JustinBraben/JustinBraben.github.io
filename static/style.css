@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #f7a41d;
+  --secondary-color: #bbb;
+  --accent-color: #e96900;
+  --text-color: #eee;
+  --background-color: #111;
+}
+
+ul { margin-bottom: 0.5rem; }
+
 @font-face {
   font-family: 'Merriweather';
   src: url('Merriweather/Merriweather-Regular.ttf') format('truetype');
@@ -56,11 +66,10 @@
   font-weight: normal;
 }
 
-
 h1,
 h2,
 h3 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Merriweather', serif;
   font-weight: normal;
   color: #eee;
   align-self: center;
@@ -118,10 +127,59 @@ nav a:hover {
 }
 
 #content {
+  width: 50.00%;
   align-self: center;
   box-sizing: border-box;
   padding: 0 30px;
-  max-width: min(600px, 100vw);
+  max-width: 1200px; /* Optional: sets a maximum width */
+}
+
+.blog-list a {
+    font-size: 30px;
+    /*color: #333; *//* Change the color as needed */
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.blog-list a:hover {
+    color: #e96900; /* Change color on hover */
+}
+
+.meta { display: block; display: block; color: #828282; font-family: "Open Sans", sans-serif; font-size: 1rem;}
+
+#content .post-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#content .post-list li {
+    margin-bottom: 20px;
+}
+
+#content .post-list h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+#content .post-list time {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#content .post-list a {
+    font-size: 1.2em;
+    /* color: #bbb; */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#content .post-list a:hover {
+    color: #e96900; /* Change color on hover */
 }
 
 .centered {

@@ -1,6 +1,6 @@
 ---
 {
-    .title = "Tech",
+    .title = "Landing Page",
     .date = @date("2020-07-06T00:00:00"),
     .author = "Justin Braben",
     .draft = false,
