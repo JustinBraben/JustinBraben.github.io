@@ -35,13 +35,15 @@ jobs:
           pwd
           echo "Contents: "
           ls
+          echo "Contents of zig-out: "
+          ls zig-out
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./zig-out
+          publish_dir: zig-out
           
       - name: Save Cache
         uses: actions/cache/save@v3
