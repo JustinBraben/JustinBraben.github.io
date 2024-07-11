@@ -19,5 +19,10 @@ However, the EnTT library does have some useful test code to get me started.
 
 
 ```cpp
+struct Position {
+    int x, y;
+};
 entt::registry world;
+
+auto e = world.create();
 ```
