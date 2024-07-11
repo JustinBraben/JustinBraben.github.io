@@ -21,7 +21,12 @@
       
     <h3 class="overtitle centered">Blog Page</h3>
     <!-- <h1 class="title" var="$page.title"></h1> -->
-    <div id="page" ><h1>EnTT Sorting Examples</h1><p>I have used EnTT for small hobby projects in the past. Usually in conjuction with SFML. Currently working on a solitaire game with SDL, and using EnTT to handle the entities for the game.</p><p>I would like to share some examples of sorting with the EnTT library. I couldn't find many example posts about the subject online. However, the EnTT library does have some useful test code to get me started.</p><pre><code class="cpp"><span class="type">entt</span>::registry world;
+    <div id="page" ><h1>EnTT Sorting Examples</h1><p>I have used EnTT for small hobby projects in the past. Usually in conjuction with SFML. Currently working on a solitaire game with SDL, and using EnTT to handle the entities for the game.</p><p>I would like to share some examples of sorting with the EnTT library. I couldn't find many example posts about the subject online. However, the EnTT library does have some useful test code to get me started.</p><pre><code class="cpp">struct Position {
+    int x, y;
+};
+<span class="type">entt</span>::registry world;
+
+<span class="type">auto</span> e = world.create();
 </code></pre>
 </div>
 
